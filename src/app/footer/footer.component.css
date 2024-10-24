@@ -1,0 +1,30 @@
+img {
+  max-width: auto;
+  height: 80px;
+}
+p {
+  font-family: Comfortaa, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#reseau {
+  gap: 15px;
+  height: 80px;
+  width: auto;
+  margin-top: 10px;
+}
+#droite {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#liste {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer {
+  max-height: 110px;
+}

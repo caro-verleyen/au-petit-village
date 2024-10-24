@@ -1,0 +1,30 @@
+<main>
+  <div class="text-center mt-5" id="top"></div>
+  <div id="header">
+    <img id="made" src="made3.png" alt="made in france" />
+    <img
+      id="casque"
+      class="rounded img-fluid"
+      src="Logo6.png"
+      alt="casque gaullois"
+    />
+    <img id="made" src="made3.png" alt="made in france" />
+  </div>
+  <section>
+    <div id="titre">
+      <h1>Retrouvez tout nos produits</h1>
+    </div>
+    <app-search-bar [(search)]="search"></app-search-bar>
+    <div id="card-list">
+      @for (hero of filteredHeros();track hero) {
+      <app-card [hero]="hero" />
+      }@empty {
+      <div class="center">Pas de résultats</div>
+      }
+    </div>
+    @if (filteredHeros().length>0) { }@else {
+    <div class="center">{{ filteredHeros().length }} trouvés</div>
+
+    }
+  </section>
+</main>

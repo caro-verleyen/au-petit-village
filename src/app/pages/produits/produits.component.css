@@ -1,0 +1,42 @@
+#made {
+  max-width: auto;
+  height: 100px;
+  margin-top: 100px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+}
+#casque {
+  max-width: auto;
+  height: 300px;
+  margin-bottom: 50px;
+}
+#titre {
+  display: flex;
+  align-items: center;
+  margin-left: 700px;
+  margin-right: 400px;
+  margin-top: 50px;
+}
+#card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h1 {
+  font-family: BubbleboddyNeue-bold, sans-serif;
+}
+#search {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.center {
+  margin-top: 40px;
+  text-align: center;
+}

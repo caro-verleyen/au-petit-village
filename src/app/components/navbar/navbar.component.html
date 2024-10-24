@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"
+      ><img id="logo" src="Logo2.png" alt="casque gaullois"
+    /></a>
+    <h1 class="mx-5 text-center">Au petit village</h1>
+    <button
+      id="navbarNav"
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse nav justify-content-end"
+      [ngClass]="{ show: isMenuOpen }"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item mx-5">
+          <a class="nav-link" routerLink="/">Accueil</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link" routerLink="/produits">Produits</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link" routerLink="/apropos">À propos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

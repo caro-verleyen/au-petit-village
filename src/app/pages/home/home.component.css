@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "BubbleboddyNeue-bold Trial";
+  src: url("/public/BubbleboddyNeue-Bold.ttf") format("truetype");
+}
+
+#casque {
+  max-width: auto;
+  height: 300px;
+  margin-bottom: 50px;
+}
+body {
+  background: linear-gradient(135deg, #fdd90b 60%, #da001e);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: BubbleboddyNeue-bold, sans-serif;
+}
+p {
+  font-family: Comfortaa, sans-serif;
+}
+.footer {
+  min-height: 60px; /* whatever you want it to be */
+  flex-grow: 0;
+}
+#card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#search {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#made {
+  max-width: auto;
+  height: 100px;
+  margin-top: 100px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#presentation {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+}
+#tri {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: Comfortaa, sans-serif;
+}
+button {
+  font-family: Comfortaa, sans-serif;
+}

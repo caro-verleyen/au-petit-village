@@ -1,0 +1,38 @@
+<body>
+  <div class="text-center mt-5" id="top">
+    <div id="header">
+      <img id="made" src="made3.png" alt="made in france" />
+      <img
+        id="casque"
+        class="rounded img-fluid"
+        src="Logo6.png"
+        alt="casque gaullois"
+      />
+      <img id="made" src="made3.png" alt="made in france" />
+    </div>
+    <h1>bienvenue au "Petit Village"</h1>
+    <div>
+      <p id="presentation">
+        Nous sommes une entreprise artisanale passionnée par l'univers
+        intemporel d'Astérix et Obélix.<br />
+        notre atelier confectionne des figurines uniques qui rendent hommage aux
+        célèbres héros gaulois et à leurs aventures légendaires.
+      </p>
+    </div>
+    <a className="btn btn-dark lh-lg" href="#"> En savoir plus </a>
+  </div>
+  <div id="tri">
+    trier par ordre:
+    <button class="btn btn-outline-dark mx-2" (click)="sortOrder = 'asc'">
+      croissant
+    </button>
+    <button class="btn btn-outline-dark mx-2" (click)="sortOrder = 'desc'">
+      décroissant
+    </button>
+  </div>
+  <div id="card-list">
+    <div *ngFor="let hero of heros | orderByPrice : sortOrder">
+      <app-card [hero]="hero" />
+    </div>
+  </div>
+</body>
